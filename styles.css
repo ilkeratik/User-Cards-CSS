@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,500&display=swap');
+html, body{
+    background-color: aqua;
+    box-sizing: border-box;
+    font-family: 'Monserrat',sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.card-container{
+    text-align: center;
+    display: flex;
+    background-color: beige;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    padding-top: 30px;
+    width: 20em;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.card hr{
+    border: 0;
+    border-top: 4px solid rgb(173, 149, 216);
+    width: 60px;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+}
+.user-img{
+    position: relative;
+    width: 100%;
+}
+.user-img img{
+    width: 100%;
+    height: 290px;
+    border-radius: 1em;
+}
+
+.user-name{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    height: 5em;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%);
+}
+.user-role{
+    background-color: #dfb034;
+    width: 100%;
+    color: #2f363d;
+    font-size: 1.2em;
+}
+
+.card a {
+	text-decoration: none;
+}
+
+.user-social{
+    width: 100%;
+    background-color: rgba(245, 228, 118, 0.575);
+    border-radius: 1em;
+}
+.user-social span{
+    
+}
+
+.card .fa-stack {
+	width: 2em;
+	margin-bottom: 1.25rem;
+	margin-right: 0.375rem;
+	font-size: 1.3rem;
+}
+
+.card .fa-stack .fa-stack-1x {
+    margin-top: 7px;
+    color: #dfb034;
+    border-radius: 50%;
+    border: 2px #dfb034 solid;
+	transition: all 0.2s ease;
+}
+
+.card .fa-stack .fa-stack-2x {
+	color: transparent;
+	transition: all 0.2s ease;
+}
+
+.card .fa-stack:hover .fa-stack-1x {
+	color: #dfb034;
+    background-color: rgb(0, 0, 0);
+}
