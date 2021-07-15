@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,200;1,300;1,500&display=swap');
 html, body{
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     font-family: 'Monserrat',sans-serif;
-    font-weight: 300;
-    line-height: 1.5;
 }
 
 .card-container{
     text-align: center;
+	padding: 30px 50px;
     display: flex;
-    background-color: beige;
     border-radius: 20px;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 .card{
-    padding-top: 30px;
-    width: 20em;
+	margin: 10px 20px;
     border-radius: 10%;
     display: flex;
     flex-direction: column;
@@ -34,63 +31,84 @@ html, body{
 }
 .user-img{
     position: relative;
-    width: 100%;
+    width: 280px;
 }
 .user-img img{
     width: 100%;
-    height: 290px;
+    height: 320px;
     border-radius: 1em;
 }
-
 .user-name{
     position: absolute;
     bottom: 0;
     color: white;
-    height: 5em;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
 }
-.user-role{
-    background-color: #dfb034;
-    width: 100%;
-    color: #2f363d;
-    font-size: 1.2em;
+.user-name h2{
+	margin: 0;
+	color: white;
+    font-size: 2em;
+    line-height: 1.5em;
+	font-weight: 600;
 }
 
+.user-role{
+	background: linear-gradient(180deg, rgb(133, 112, 172) 0%, rgba(251,189,25,0) 100%);
+    width: 280px;
+    color: #000000;
+    min-height: 90px;
+	max-height: 90px;
+    overflow: auto;
+    overflow-x: hidden;
+    font-size: 1.3em;
+}
+.user-role::-webkit-scrollbar {
+    width: 12px;
+}
+
+.user-role::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(49, 21, 94, 0.5); 
+    border-radius: 10px;
+}
+
+.user-role::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(82, 37, 155, 0.5); 
+}
+.user-role p{
+	font-weight: 600;
+	padding: 0 5px;
+    line-height: 2;
+}
 .card a {
 	text-decoration: none;
 }
-
 .user-social{
     width: 100%;
-    background-color: rgba(245, 228, 118, 0.575);
+    background: linear-gradient(0deg, rgb(133, 112, 172) 0%, rgba(251,189,25,0) 40%);
     border-radius: 1em;
 }
 .user-social span{
     
 }
-
 .card .fa-stack {
-	width: 2em;
-	margin-bottom: 1.25rem;
-	margin-right: 0.375rem;
-	font-size: 1.3rem;
+	width: 2.15em;
+	margin-bottom: 1em;
+	margin-right: 0.2em;
+	font-size: 1.4em;
 }
-
 .card .fa-stack .fa-stack-1x {
-    margin-top: 7px;
-    color: #dfb034;
-    border-radius: 50%;
-    border: 2px #dfb034 solid;
+    margin-top: 0.33em;
+    color: rgb(133, 112, 172);
+    border: 1px rgb(133, 112, 172) solid;
 	transition: all 0.2s ease;
 }
-
 .card .fa-stack .fa-stack-2x {
 	color: transparent;
 	transition: all 0.2s ease;
 }
-
 .card .fa-stack:hover .fa-stack-1x {
-	color: #dfb034;
-    background-color: rgb(0, 0, 0);
+    color: #fff;
+    background-color: rgb(133, 112, 172);
 }
