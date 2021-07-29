@@ -24,7 +24,7 @@ html, body{
 }
 .card hr{
     border: 0;
-    border-top: 4px solid rgb(173, 149, 216);
+    border-top: 4px solid #fbbd19;
     width: 60px;
     margin-block-start: 8px;
     margin-block-end: 8px;
@@ -40,54 +40,46 @@ html, body{
 }
 .user-name{
     position: absolute;
+	padding: 5 10px;
     bottom: 0;
     color: white;
     width: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0) 100%);
 }
 .user-name h2{
-	margin: 0;
-	color: white;
-    font-size: 2em;
-    line-height: 1.5em;
-	font-weight: 600;
+    margin: 0;
+    color: white;
+    padding: 10px;
+    line-height: 1.3em;
+    font-weight: 600;
+    font-size: 1.8em;
 }
 
 .user-role{
-	background: linear-gradient(180deg, rgb(133, 112, 172) 0%, rgba(251,189,25,0) 100%);
+    display: table; 
+    background: white;
+    padding-top: 0;
     width: 280px;
-    color: #000000;
-    min-height: 90px;
-	max-height: 90px;
-    overflow: auto;
-    overflow-x: hidden;
-    font-size: 1.3em;
-}
-.user-role::-webkit-scrollbar {
-    width: 12px;
+    color: #2f363d;
+    height: 100px;
 }
 
-.user-role::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(49, 21, 94, 0.5); 
-    border-radius: 10px;
-}
-
-.user-role::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(82, 37, 155, 0.5); 
-}
 .user-role p{
-	font-weight: 600;
-	padding: 0 5px;
-    line-height: 2;
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell;   
+    margin-block-start: 1em;
+    margin-block-end: 0;
+    line-height: 1.2em;
+    font-size: 1.3em;
+    font-style: italic;
 }
 .card a {
 	text-decoration: none;
 }
 .user-social{
     width: 100%;
-    background: linear-gradient(0deg, rgb(133, 112, 172) 0%, rgba(251,189,25,0) 40%);
-    border-radius: 1em;
+    background: #3e3d3f;
 }
 .user-social span{
     
@@ -99,16 +91,16 @@ html, body{
 	font-size: 1.4em;
 }
 .card .fa-stack .fa-stack-1x {
-    margin-top: 0.33em;
-    color: rgb(133, 112, 172);
-    border: 1px rgb(133, 112, 172) solid;
-	transition: all 0.2s ease;
+    margin-top: 0.4em;
+    color: #fbbd19;
+    border: 1px #fbbd19 solid;
+    transition: all 0.2s ease;
 }
 .card .fa-stack .fa-stack-2x {
 	color: transparent;
 	transition: all 0.2s ease;
 }
 .card .fa-stack:hover .fa-stack-1x {
-    color: #fff;
-    background-color: rgb(133, 112, 172);
+    color: #fbbd19;
+    background-color: #feffc4;
 }
